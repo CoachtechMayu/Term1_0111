@@ -1,0 +1,163 @@
+/* ヘッダー */
+.header {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__inner {
+    margin-left: 20px;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*ナビゲーション*/
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.header-item a{
+    color: #000000;
+    text-decoration: none;
+}
+/* ログアウト */
+.header-item button{
+    border: none;
+    color: #000000;
+    background: transparent;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header__list:last-of-type {
+    margin-right: 20px;     /* 最後のみ余白広め */
+}
+
+/*勤怠管理*/
+.Attendance-management {
+    max-width: 1230px;
+    background: #f1f1f1;
+}
+/* 名前 */
+.user__name {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* 勤務開始/勤務終了 */
+.attendance__btn{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* ボタン全般後で使う用 */
+/* .btn__time-on a:hover {
+    background: rgb(117, 188, 255);
+    background: linear-gradient(270deg, rgba(117, 188, 255, 1) 0%, rgba(62, 159, 252, 1) 100%);
+} */
+
+/*勤務開始*/
+.time-on  {
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+.time-on button{
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    padding: 4em;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.time-off {
+    margin-top: 2rem;
+}
+
+.time-off button {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    padding:4em;
+    align-items: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 休憩 */
+.rest__btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 休憩開始 */
+.rest-start {
+    margin-top: 4rem;
+    margin-right: 3rem;
+    margin-bottom: 8rem;
+}
+
+.rest-start button {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    padding: 4em;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* 休憩終了 */
+.rest-stop {
+    margin-top: 4rem;
+}
+
+.rest-stop button {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    padding: 4em;
+    align-items: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* フッター */
+.footer {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.footer__inner {
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}

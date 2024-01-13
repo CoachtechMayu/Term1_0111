@@ -1,0 +1,29 @@
+/* ヘッダー */
+.header {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__inner {
+    margin-left: 20px;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* フッター */
+.footer {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.footer__inner {
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
