@@ -30,3 +30,6 @@ Route::group(['middleware' => 'auth'], function() {
 /* 休憩開始・休憩終了 */
 Route::post('/break_start', [RestController::class, 'BreakStart'])->name('rest/break_start');
 Route::post('/break_end', [RestController::class, 'BreakEnd'])->name('rest/break_end');
+
+/* 日付別勤怠ページ */
+Route::get('/attendance' '[]);

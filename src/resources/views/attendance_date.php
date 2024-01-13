@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atte_Date</title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
+    <!-- 仮 -->
     <link rel="stylesheet" href="{{ asset('css/attendance.css') }}" />
 </head>
 <body>
@@ -38,7 +39,24 @@
     @foreach ($users as $user)
     <tr>
         <td>
-        {{$user->name()}}
+            <!-- 名前取得 -->
+            {{$user->name}}
+        </td>
+        <td>
+            <!-- 勤務開始 -->
+            {{$user->timestamp->time_in}}
+        </td>
+        <td>
+            <!-- 勤務終了 -->
+            {{$user->timestamp->time_out}}
+        </td>
+        <td>
+            <!-- 休憩 仮 総休憩時間作る -->
+            {{$user->rest->break_time}}
+        </td>
+        <td>
+            <!-- 勤務時間 仮 総休憩時間作る -->
+            {{$user->timestamp->worktime}}
         </td>
     </tr>
     @endforeach
